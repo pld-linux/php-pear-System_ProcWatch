@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          System
-%define         _subclass       ProcWatch
+%define		_class		System
+%define		_subclass	ProcWatch
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Monitor processes
-Summary(pl):	%{_pearname} - Monitorowanie procesów
+Summary:	%{_pearname} - monitor processes
+Summary(pl):	%{_pearname} - monitorowanie procesów
 Name:		php-pear-%{_pearname}
 Version:	0.4
 Release:	1
