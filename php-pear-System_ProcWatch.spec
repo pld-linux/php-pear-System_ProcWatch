@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	35d4471a5f044569ccb34a72d8d1c72b
 URL:		http://pear.php.net/package/System_ProcWatch/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.0.2
 Requires:	php-pcre
