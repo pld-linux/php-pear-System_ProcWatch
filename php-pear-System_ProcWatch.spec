@@ -4,7 +4,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - monitor processes
-Summary(pl):	%{_pearname} - monitorowanie procesów
+Summary(pl.UTF-8):   %{_pearname} - monitorowanie procesÃ³w
 Name:		php-pear-%{_pearname}
 Version:	0.4.2
 Release:	5
@@ -33,10 +33,10 @@ patterns, conditions and actions.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Za pomoc± tej klasy mo¿liwe jest monitorowanie procesów na podstawie
-pliku konfiguracyjnego w formacie XML, ci±gu znaków XML, pliku INI
-b±d¼ tablicy w której zdefiniowane s± wzorce, warunki oraz akcje.
+%description -l pl.UTF-8
+Za pomocÄ… tej klasy moÅ¼liwe jest monitorowanie procesÃ³w na podstawie
+pliku konfiguracyjnego w formacie XML, ciÄ…gu znakÃ³w XML, pliku INI
+bÄ…dÅº tablicy w ktÃ³rej zdefiniowane sÄ… wzorce, warunki oraz akcje.
 
 Ta klasa ma w PEAR status: %{_status}.
 
