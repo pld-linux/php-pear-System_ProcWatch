@@ -4,7 +4,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - monitor processes
-Summary(pl.UTF-8):   %{_pearname} - monitorowanie procesów
+Summary(pl.UTF-8):	%{_pearname} - monitorowanie procesów
 Name:		php-pear-%{_pearname}
 Version:	0.4.2
 Release:	5
