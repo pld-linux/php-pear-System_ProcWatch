@@ -7,7 +7,7 @@ Summary:	%{_pearname} - monitor processes
 Summary(pl.UTF-8):	%{_pearname} - monitorowanie procesów
 Name:		php-pear-%{_pearname}
 Version:	0.4.2
-Release:	6
+Release:	7
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,10 +16,13 @@ URL:		http://pear.php.net/package/System_ProcWatch/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.2
+Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
+Suggests:	php-pear-Console_Getopt
+Suggests:	php-pear-XML_DTD
+Suggests:	php-pear-XML_Parser >= 1.1.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
