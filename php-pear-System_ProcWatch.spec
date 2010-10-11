@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - monitor processes
 Summary(pl.UTF-8):	%{_pearname} - monitorowanie procesów
 Name:		php-pear-%{_pearname}
-Version:	0.4.2
-Release:	7
+Version:	0.4.3
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	35d4471a5f044569ccb34a72d8d1c72b
+# Source0-md5:	19f979c00879bc840db01c92aa593f07
 URL:		http://pear.php.net/package/System_ProcWatch/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -45,6 +45,9 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
+
+# no for win
+rm usr/bin/*.cmd
 
 %install
 rm -rf $RPM_BUILD_ROOT
