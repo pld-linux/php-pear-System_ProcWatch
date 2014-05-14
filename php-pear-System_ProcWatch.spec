@@ -13,7 +13,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/System_ProcWatch/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php(core) >= 4.0.2
 Requires:	php(pcre)
 Requires:	php-pear
@@ -25,7 +25,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # exclude optional dependencies
-%define		_noautoreq	'pear(XML/Parser.*)' 'pear(XML/DTD.*)' 'pear(Console/Getopt.*)' 'pear(.*)'
+%define		_noautoreq_pear XML/Parser.* XML/DTD.* Console/Getopt.* .*
 
 %description
 With this package you can monitor running processes based upon an XML
