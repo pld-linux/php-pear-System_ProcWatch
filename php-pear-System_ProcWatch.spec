@@ -1,6 +1,5 @@
 %define		_status		beta
 %define		_pearname	System_ProcWatch
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - monitor processes
 Summary(pl.UTF-8):	%{_pearname} - monitorowanie procesów
 Name:		php-pear-%{_pearname}
